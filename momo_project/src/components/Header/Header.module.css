@@ -1,0 +1,85 @@
+/* Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  background-color: #fdb900;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.logo img {
+  width: 250px;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.trialButton {
+  padding: 10px 20px;
+  background-color: #3e3420;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.listsButton {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .navLinks {
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .ctaButton {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .listsButton {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width < 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+  .navLinks {
+    flex-direction: row;
+  }
+  .navLinks li {
+    font-size: 0.9rem;
+  }
+
+  .ctaButton {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  .listsButton {
+    flex-direction: column;
+    width: 100%;
+  }
+}

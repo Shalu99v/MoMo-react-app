@@ -1,0 +1,63 @@
+/* Footer.module.css */
+
+.footer {
+  padding: 2rem 6rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.footerContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactMessage {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contactButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: black;
+  background-color: #fdb900;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.contactButton:hover {
+  background-color: #fdb900;
+}
+
+.socialLinks {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socialLinks a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #fdb900;
+}
+
+.copyright,
+.email {
+  font-size: 0.8rem;
+  color: #c7c1c1;
+  line-height: 1.5;
+}
+.underlined {
+  text-decoration: underline;
+}

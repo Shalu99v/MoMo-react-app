@@ -1,0 +1,71 @@
+/* FeatureHighlights.module.css */
+
+.featureHighlights {
+    padding: 60px 20px;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    /* margin-bottom: 40px; */
+  }
+  
+  .featuresContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .featureBlock {
+    background-color: #ffffff;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+  }
+  
+  .featureBlock:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon {
+    font-size: 2.5rem; /* Increase size for visual emphasis */
+    margin-bottom: 15px;
+  }
+  
+  .featureTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .featureDescription {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .featuresContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .featureBlock {
+      width: 100%;
+      max-width: 90%;
+    }
+  }
+  

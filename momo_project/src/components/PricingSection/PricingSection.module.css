@@ -1,0 +1,81 @@
+/* PricingSection.css */
+
+.pricingSection {
+  padding: 60px 20px;
+  background-image: url('../../assets/banner2.png');
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #333;
+}
+
+.pricingSection h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.pricingCards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+.card {
+  background-color: #ffffff;
+  /* border: 1px solid #ddd; */
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 280px;
+  max-width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Hover effect to lift the card */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card p:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fcb900;
+}
+
+.ctaButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3e3420;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+}
+
+.ctaButton:hover {
+  background-color: #3e3420;
+}
+
+@media (max-width: 768px) {
+  .pricingCards {
+    flex-direction: column; 
+    align-items: center;
+  }
+}

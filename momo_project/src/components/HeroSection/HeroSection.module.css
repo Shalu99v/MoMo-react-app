@@ -1,0 +1,107 @@
+/* HeroSection.module.css */
+
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #333;
+  flex-direction: row;
+  background-image: url('../../assets//banner1.png');
+  background-repeat: no-repeat;
+}
+
+.heroContent {
+  max-width: 50%;
+}
+
+.heroContent h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  width: 250px;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #555;
+  width: 360px;
+}
+
+.ctaButton {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3e3420;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #e0a700;
+}
+
+.heroImage {
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroContent {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .heroImage {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 20px 10px;
+  }
+
+  .heroContent h1 {
+    font-size: 1.8rem;
+  }
+
+  .heroContent p {
+    font-size: 0.9rem;
+  }
+
+  .ctaButton {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .heroImage {
+    max-width: 90%;
+  }
+}
